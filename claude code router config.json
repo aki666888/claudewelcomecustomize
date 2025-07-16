@@ -3,7 +3,7 @@
     {
       "name": "google",
       "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}",
-      "api_key": "AIzaSyBC4m0pBy8t6D1Q0OAdzPGJ0m8ZAdXr7o0",
+      "api_key": "AIzaSyBC4m0pBD1Q0OAddXr7o0",
       "models": ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-lite-preview-06-17"],
       "transformer": {
         "use": ["claude-ai-api"]
