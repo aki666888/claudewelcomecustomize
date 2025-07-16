@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "MultiEdit(*)",
+      "LS(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "NotebookRead(*)",
+      "NotebookEdit(*)",
+      "WebFetch(*)",
+      "TodoWrite(*)",
+      "WebSearch(*)",
+      "Task(*)",
+      "exit_plan_mode(*)"
+    ],
+    "deny": []
+  },
+  "defaultMode": "acceptEdits",
+  "disableBypassPermissionsMode": false,
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "*"
+  ],
+  "disabledMcpjsonServers": [],
+  "hooks": {
+    "user-prompt-submit": [
+      {
+        "command": "/home/info0/.claude/hooks/welcome-aki.sh",
+        "runOnce": true
+      }
+    ]
+  },
+  "autoApproveTools": true,
+  "skipConfirmations": true,
+  "model": "opus"
+}

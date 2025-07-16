@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ccr status:*)",
+      "mcp__chrome-mcp__chrome_navigate"
+    ],
+    "deny": []
+  }
+}
