@@ -1,4 +1,10 @@
 #!/bin/bash
-# Start Claude Code and remove first 5 lines - WSL friendly
+# Start Claude Code and remove first 9 lines - WSL friendly
 
-script -qec "claude $*" /dev/null | tail -n +9
+# Run welcome hook BEFORE claude starts
+if [ -f ~/.claude/hooks/welcome-aki.sh ]; then
+    ~/.claude/hooks/welcome-aki.sh
+fi
+
+# Remove MORE lines to hide entire regular welcome (try 12-15 lines)
+script -qec "claude $*" /dev/null | tail -n +12
