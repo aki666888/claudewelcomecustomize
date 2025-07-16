@@ -1,0 +1,11 @@
+#!/bin/bash
+# Ensure CCR is running
+if ! ccr status 2>/dev/null | grep -q "Running"; then
+    ccr start >/dev/null 2>&1 &
+    sleep 2
+fi
+
+# Launch Claude with Gemini 2.5 Flash Lite
+export CLAUDE_API_PROXY="http://127.0.0.1:3456/v1"
+export CLAUDE_MODEL="google,gemini-2.5-flash-lite-preview-06-17"
+exec claude --dangerously-skip-permissions "$@"

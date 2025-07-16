@@ -1,0 +1,4 @@
+#!/bin/bash
+# Start Claude Code and remove first 5 lines - WSL friendly
+
+script -qec "claude $*" /dev/null | tail -n +9
