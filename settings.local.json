@@ -2,7 +2,29 @@
   "permissions": {
     "allow": [
       "Bash(ccr status:*)",
-      "mcp__chrome-mcp__chrome_navigate"
+      "mcp__chrome-mcp__get_windows_and_tabs",
+      "mcp__chrome-mcp__chrome_navigate", 
+      "mcp__chrome-mcp__chrome_close_tabs",
+      "mcp__chrome-mcp__chrome_go_back_or_forward",
+      "mcp__chrome-mcp__chrome_screenshot",
+      "mcp__chrome-mcp__chrome_network_capture_start",
+      "mcp__chrome-mcp__chrome_network_capture_stop",
+      "mcp__chrome-mcp__chrome_network_debugger_start",
+      "mcp__chrome-mcp__chrome_network_debugger_stop",
+      "mcp__chrome-mcp__chrome_network_request",
+      "mcp__chrome-mcp__search_tabs_content",
+      "mcp__chrome-mcp__chrome_get_web_content",
+      "mcp__chrome-mcp__chrome_get_interactive_elements",
+      "mcp__chrome-mcp__chrome_click_element",
+      "mcp__chrome-mcp__chrome_fill_or_select",
+      "mcp__chrome-mcp__chrome_keyboard",
+      "mcp__chrome-mcp__chrome_history",
+      "mcp__chrome-mcp__chrome_bookmark_search",
+      "mcp__chrome-mcp__chrome_bookmark_add",
+      "mcp__chrome-mcp__chrome_bookmark_delete",
+      "mcp__chrome-mcp__chrome_inject_script",
+      "mcp__chrome-mcp__chrome_send_command_to_inject_script",
+      "mcp__chrome-mcp__chrome_console"
     ],
     "deny": []
   }
